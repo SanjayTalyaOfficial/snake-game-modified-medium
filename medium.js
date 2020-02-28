@@ -43,47 +43,6 @@ snake[0] = {
 
 //create another snake
 
-let anothersnakex = [];
-
-anothersnakex[0] = {
-    x : 6 * box, //192 was 7 *box
-    y : 8 * box
-};
-
-let anothersnakex1 = [];
-
-anothersnakex1[0] = {
-    x : 1 * box, //32
-    y : 9 * box
-};
-let anothersnakex2 = [];
-
-anothersnakex2[0] = {
-    x : 2 * box, // 64
-    y : 10 * box
-};
-
-let anothersnakex3 = [];
-
-anothersnakex3[0] = {
-    x : 3 * box, // 96
-    y : 11 * box
-};
-let anothersnakex4 = [];
-
-anothersnakex4[0] = {
-    x : 4 * box, // 128
-    y : 12 * box
-};
-
-let anothersnakex5 = [];
-
-anothersnakex5[0] = {
-    x : 5 * box, // 160
-    y : 13 * box
-};
-
-
 //create another snake
 
 let anothersnake = [];
@@ -123,6 +82,48 @@ let anothersnake5 = [];
 
 anothersnake5[0] = {
     x : 7 * box,
+    y : 13 * box
+};
+
+/////////////////////------------creating obstacle obj for medium---------------////////////////////////////////////
+
+let anothersnakex = [];
+
+anothersnakex[0] = {
+    x : 14 * box,
+    y : 8 * box
+};
+
+let anothersnakex1 = [];
+
+anothersnakex1[0] = {
+    x : 14 * box,
+    y : 9 * box
+};
+let anothersnakex2 = [];
+
+anothersnakex2[0] = {
+    x : 14 * box,
+    y : 10 * box
+};
+
+let anothersnakex3 = [];
+
+anothersnakex3[0] = {
+    x : 14 * box,
+    y : 11 * box
+};
+let anothersnakex4 = [];
+
+anothersnakex4[0] = {
+    x : 14 * box,
+    y : 12 * box
+};
+
+let anothersnakex5 = [];
+
+anothersnakex5[0] = {
+    x : 14 * box,
     y : 13 * box
 };
 
@@ -187,7 +188,7 @@ function draw(){
         ctx.strokeStyle = "red";
         ctx.strokeRect(snake[i].x,snake[i].y,box,box);
 		
-		if(snake[i].x == 224 && snake[i].y == 256 || snake[i].x == 224 && snake[i].y == 288 || snake[i].x == 224 && snake[i].y == 320 || snake[i].x == 224 && snake[i].y == 352 || snake[i].x == 224 && snake[i].y == 384 || snake[i].x == 224 && snake[i].y == 416 || snake[i].x == 32 && snake[i].y == 416 || snake[i].x == 64 && snake[i].y == 416 || snake[i].x == 96 && snake[i].y == 416 || snake[i].x == 128 && snake[i].y == 416 || snake[i].x == 160 && snake[i].y == 416 || snake[i].x == 192 && snake[i].y == 416)
+		if(snake[i].x == 224 && snake[i].y == 256 || snake[i].x == 224 && snake[i].y == 288 || snake[i].x == 224 && snake[i].y == 320 || snake[i].x == 224 && snake[i].y == 352 || snake[i].x == 224 && snake[i].y == 384 || snake[i].x == 224 && snake[i].y == 416 ||  snake[i].x == 14*box && snake[i].y == 256 || snake[i].x == 14*box && snake[i].y == 288 || snake[i].x == 14*box && snake[i].y == 320 || snake[i].x == 14*box && snake[i].y == 352 || snake[i].x == 14*box && snake[i].y == 384 || snake[i].x == 14*box && snake[i].y == 416)
 		{
 			clearInterval(game);
 			dead.play();
