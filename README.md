@@ -1,1 +1,1 @@
-# snake-game-modified-medium
+This project is created as a part of Prograd Program. This is created by a noob!!!
